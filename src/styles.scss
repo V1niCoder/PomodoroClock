@@ -1,0 +1,123 @@
+$backgroundColor: #ffffff;
+$fontColor: #000000;
+$hoverColor: #383838;
+
+:root {
+  --backgroundColor: #ffffff;
+  --fontColor: #000000;
+  --hoverColor: #383838;
+}
+
+body {
+  background-color: var(--backgroundColor);
+  color: var(--fontColor);
+}
+
+root {
+  width: 100%;
+}
+
+h1 {
+  font-size: 8vh;
+  text-align: center;
+}
+
+h3 {
+  font-size: 5vh;
+}
+
+i {
+  font-size: 3vh;
+}
+
+#both-divs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#session-label,
+#break-label,
+#timer-label {
+  font-size: 4vh;
+  margin-top: 3em;
+  text-align: center;
+}
+
+#session-div,
+#break-div {
+  margin-right: 1em;
+  margin-left: 1em;
+  text-align: center;
+}
+
+#session-length,
+#break-length {
+  font-size: 1.5em;
+}
+
+#timer-div {
+  text-align: center;
+}
+
+#time-left {
+  font-size: 5vh;
+}
+
+#start_stop {
+  font-size: 1.5em;
+  padding-right: 0.5em;
+  transition: transform 0.3s ease-in-out, color 0.2s ease-in-out;
+  &:hover,
+  &:active {
+    transform: scale(1.2);
+    color: var(--hoverColor);
+    cursor: pointer;
+  }
+}
+
+#reset {
+  font-size: 1.5em;
+  padding-left: 0.5em;
+  padding-top: 0.5em;
+  transition: transform 0.3s ease-in-out, color 0.2s ease-in-out;
+  &:hover,
+  &:active {
+    transform: scale(1.2);
+    color: var(--hoverColor);
+    cursor: pointer;
+  }
+}
+
+.arrow-icon {
+  font-size: 1.5em;
+  transition: transform 0.3s ease-in-out, color 0.2s ease-in-out;
+  &:hover,
+  &:active {
+    transform: scale(1.2);
+    color: var(--hoverColor);
+    cursor: pointer;
+  }
+}
+
+#extras-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 0.5em;
+  margin-top: 0.5em;
+  font-size: 3vh;
+}
+
+#colors-button {
+  padding-right: 0.5em;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+#toggle-button {
+  &:hover {
+    cursor: pointer;
+  }
+}
